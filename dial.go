@@ -192,8 +192,6 @@ func handshakeRequest(ctx context.Context, urls string, opts *DialOptions, copts
 		req.Host = opts.Host
 	}
 	req.Header = opts.HTTPHeader.Clone()
-	req.Header.Set("Connection", "Upgrade")
-	req.Header.Set("Upgrade", "websocket")
 	req.Header.Set("Sec-WebSocket-Version", "13")
 	req.Header.Set("Sec-WebSocket-Key", secWebSocketKey)
 	if len(opts.Subprotocols) > 0 {
