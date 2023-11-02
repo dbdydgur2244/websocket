@@ -10,11 +10,11 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"nhooyr.io/websocket"
-	"nhooyr.io/websocket/internal/errd"
-	"nhooyr.io/websocket/internal/test/assert"
-	"nhooyr.io/websocket/internal/test/wstest"
-	"nhooyr.io/websocket/wsjson"
+	"github.com/dbdydgur2244/websocket"
+	"github.com/dbdydgur2244/websocket/internal/errd"
+	"github.com/dbdydgur2244/websocket/internal/test/assert"
+	"github.com/dbdydgur2244/websocket/internal/test/wstest"
+	"github.com/dbdydgur2244/websocket/wsjson"
 )
 
 func TestGin(t *testing.T) {

@@ -15,10 +15,10 @@ import (
 	"testing"
 	"time"
 
-	"nhooyr.io/websocket"
-	"nhooyr.io/websocket/internal/test/assert"
-	"nhooyr.io/websocket/internal/util"
-	"nhooyr.io/websocket/internal/xsync"
+	"github.com/dbdydgur2244/websocket"
+	"github.com/dbdydgur2244/websocket/internal/test/assert"
+	"github.com/dbdydgur2244/websocket/internal/util"
+	"github.com/dbdydgur2244/websocket/internal/xsync"
 )
 
 func TestBadDials(t *testing.T) {

@@ -16,13 +16,13 @@ import (
 	"testing"
 	"time"
 
-	"nhooyr.io/websocket"
-	"nhooyr.io/websocket/internal/errd"
-	"nhooyr.io/websocket/internal/test/assert"
-	"nhooyr.io/websocket/internal/test/wstest"
-	"nhooyr.io/websocket/internal/test/xrand"
-	"nhooyr.io/websocket/internal/xsync"
-	"nhooyr.io/websocket/wsjson"
+	"github.com/dbdydgur2244/websocket"
+	"github.com/dbdydgur2244/websocket/internal/errd"
+	"github.com/dbdydgur2244/websocket/internal/test/assert"
+	"github.com/dbdydgur2244/websocket/internal/test/wstest"
+	"github.com/dbdydgur2244/websocket/internal/test/xrand"
+	"github.com/dbdydgur2244/websocket/internal/xsync"
+	"github.com/dbdydgur2244/websocket/wsjson"
 )
 
 func TestConn(t *testing.T) {

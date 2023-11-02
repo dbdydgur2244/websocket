@@ -6,10 +6,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"nhooyr.io/websocket"
-	"nhooyr.io/websocket/internal/bpool"
-	"nhooyr.io/websocket/internal/errd"
-	"nhooyr.io/websocket/internal/util"
+	"github.com/dbdydgur2244/websocket"
+	"github.com/dbdydgur2244/websocket/internal/bpool"
+	"github.com/dbdydgur2244/websocket/internal/errd"
+	"github.com/dbdydgur2244/websocket/internal/util"
 )
 
 // Read reads a JSON message from c into v.

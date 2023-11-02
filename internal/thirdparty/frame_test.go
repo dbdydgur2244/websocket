@@ -9,7 +9,7 @@ import (
 	"github.com/gobwas/ws"
 	_ "github.com/gorilla/websocket"
 
-	_ "nhooyr.io/websocket"
+	_ "github.com/dbdydgur2244/websocket"
 )
 
 func basicMask(maskKey [4]byte, pos int, b []byte) int {

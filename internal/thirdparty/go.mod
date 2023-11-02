@@ -1,14 +1,14 @@
-module nhooyr.io/websocket/internal/thirdparty
+module github.com/dbdydgur2244/websocket/internal/thirdparty
 
 go 1.19
 
-replace nhooyr.io/websocket => ../..
+replace github.com/dbdydgur2244/websocket => ../..
 
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/gobwas/ws v1.3.0
 	github.com/gorilla/websocket v1.5.0
-	nhooyr.io/websocket v0.0.0-00010101000000-000000000000
+	github.com/dbdydgur2244/websocket v0.0.0-00010101000000-000000000000
 )
 
 require (

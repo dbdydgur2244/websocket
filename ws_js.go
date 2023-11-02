@@ -14,9 +14,9 @@ import (
 	"sync"
 	"syscall/js"
 
-	"nhooyr.io/websocket/internal/bpool"
-	"nhooyr.io/websocket/internal/wsjs"
-	"nhooyr.io/websocket/internal/xsync"
+	"github.com/dbdydgur2244/websocket/internal/bpool"
+	"github.com/dbdydgur2244/websocket/internal/wsjs"
+	"github.com/dbdydgur2244/websocket/internal/xsync"
 )
 
 // opcode represents a WebSocket opcode.
