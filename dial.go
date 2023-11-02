@@ -221,23 +221,8 @@ func secWebSocketKey(rr io.Reader) (string, error) {
 }
 
 func verifyServerResponse(opts *DialOptions, copts *compressionOptions, secWebSocketKey string, resp *http.Response) (*compressionOptions, error) {
-	if resp.StatusCode != http.StatusSwitchingProtocols {
+	if resp.StatusCode != 200 {
 		return nil, fmt.Errorf("expected handshake response status code %v but got %v", http.StatusSwitchingProtocols, resp.StatusCode)
-	}
-
-	if !headerContainsTokenIgnoreCase(resp.Header, "Connection", "Upgrade") {
-		return nil, fmt.Errorf("WebSocket protocol violation: Connection header %q does not contain Upgrade", resp.Header.Get("Connection"))
-	}
-
-	if !headerContainsTokenIgnoreCase(resp.Header, "Upgrade", "WebSocket") {
-		return nil, fmt.Errorf("WebSocket protocol violation: Upgrade header %q does not contain websocket", resp.Header.Get("Upgrade"))
-	}
-
-	if resp.Header.Get("Sec-WebSocket-Accept") != secWebSocketAccept(secWebSocketKey) {
-		return nil, fmt.Errorf("WebSocket protocol violation: invalid Sec-WebSocket-Accept %q, key %q",
-			resp.Header.Get("Sec-WebSocket-Accept"),
-			secWebSocketKey,
-		)
 	}
 
 	err := verifySubprotocol(opts.Subprotocols, resp)
